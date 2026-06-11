@@ -1,7 +1,7 @@
 ﻿#include "Dxlib.h"
 #include <stdlib.h>
 
-#define MOUSE_USE
+//#define MOUSE_USE
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -109,11 +109,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			if (racketX < racketW / 2)	racketX = racketW / 2;
 			if (racketX > WIDTH - racketW / 2)	racketX = WIDTH - racketW / 2;
 #else				// キーボードで操作
-			if (CheckHitKey(KEY_INPUT_LEFT) == 1) {
+			if (CheckHitKey(KEY_INPUT_A) == 1) {
 				racketX = racketX - 10;
 				if (racketX < racketW / 2) racketX = racketW / 2;
 			}
-			if (CheckHitKey(KEY_INPUT_RIGHT) == 1) {
+			if (CheckHitKey(KEY_INPUT_D) == 1) {
 				racketX = racketX + 10;
 				if (racketX > WIDTH - racketW / 2)	racketX = WIDTH - racketW / 2;
 			}

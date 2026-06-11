@@ -1,7 +1,7 @@
 ﻿#include "Dxlib.h"
 #include <stdlib.h>
 
-//#define MOUSE_USE
+#define MOUSE_USE
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
